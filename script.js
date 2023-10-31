@@ -6,5 +6,14 @@ const userInputFlavors = prompt(`Please enter Froyo flavors with commas`,
 const stringArray = userInputFlavors.split(", ");
 // console.log(stringArray);
 //create an object with keys that are flavors
+// const flavors = {
+
+// }
 //have stringArray push userInputFlavors into the object as keys
-//get the sum of the keys for the value
+//log to the console how many of each flavor they have ordered
+const typeOfFlavor = userInputFlavors;
+let countOne = (typeOfFlavor.match(/vanilla/g) || []).length;
+let countTwo = (typeOfFlavor.match(/strawberry/g) || []).length;
+let countThree = (typeOfFlavor.match(/chocolate/g) || []).length;
+let countFour = (typeOfFlavor.match(/black cherry/g) || []).length;
+console.log(countOne [`Vanilla`]);
