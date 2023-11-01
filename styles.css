@@ -1,0 +1,9 @@
+body {
+  display: flexbox;
+  background-color: black;
+  color: peru;
+  text-align: center;
+};
+h1 {
+  display: flexbox;
+};
