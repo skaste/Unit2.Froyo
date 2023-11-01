@@ -32,20 +32,17 @@
 function countFlavors() {
   // Prompt the user to enter a list of comma-separated froyo flavors
   const input = prompt("Enter a list of comma-separated froyo flavors:");
-  console.log(input);
+  console.log("userInput:", input)
   // Check if the user canceled the prompt
   if (input === null) {
       console.log("Input canceled.");
       return;
   }
-
   // Split the input into an array of flavors using a comma as the separator
   const flavors = input.split(",");
-  console.log(flavors);
-
+  console.log("Input split into array", flavors);
   // Create an object to store the counts of each flavor
   const flavorCounts = {};
-
   // Loop through the array of flavors and count their occurrences
   for (const flavor of flavors) {
       if (flavorCounts[flavor]) {
@@ -54,12 +51,11 @@ function countFlavors() {
           flavorCounts[flavor] = 1;
       }
   }
-
+  console.log("Flavor Counts", flavorCounts)
   // Display the flavor counts in the console
   for (const flavor in flavorCounts) {
       console.log(`Flavor: ${flavor}, Quantity: ${flavorCounts[flavor]}`);
   }
 }
-
 // Call the function to start the flavor counting process
 countFlavors();
